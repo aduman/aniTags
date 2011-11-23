@@ -6,25 +6,38 @@
     <title></title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" src="aniTag.js"></script>
-
-     
-
-	    <script type="text/javascript">
+	<script type="text/javascript">
     $(document).ready(function() {
-
+		$('.tags3').aniTag({
+		random: false,
+		tilt: 15,
+		colors: ['2B60DE', 'C12869', '3B9C9C', '347C2C', 'E9AB17', 'E45E9D', '7F5A58']
+		});
+    });
+    </script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+		$('.tags2').aniTag({
+		enableTilt: false,
+		colors: ['ff0000', '00ff00', '0000ff']
+		});
+    });
+    </script>
+	<script type="text/javascript">
+    $(document).ready(function() {
         $('.tags').aniTag();
-		
-
     });
     </script>
     <style>
       body {font-family:arial;font-style:bold}
-      a {color:#666; text-decoration:none}
+      a {color:#000; text-decoration:none}
         .tags{padding:5px;float:left}
+		.tags2{padding:5px;float:left}
+		.tags3{padding:5px;float:left}
     </style>
 </head>  
 <body>
- 
+ <h5>Default options</h5>
 <a class="tags" href="#">tag1</a>
 <a class="tags" href="#">tag2</a>
 <a class="tags" href="#">tag3</a>
@@ -33,12 +46,26 @@
 <a class="tags" href="#">tag6</a>
 <br/>
 <br/>
+<hr/>
+<h5>Alternative colors and tilt disabled</h5>
 
-<a class="tags" href="#">tag7</a>
-<a class="tags" href="#">tag8</a>
-<a class="tags" href="#">tag9</a>
-<a class="tags" href="#">tag10</a>
-<a class="tags" href="#">tag11</a>
-<a class="tags" href="#">tag12</a>
+<a class="tags2" href="#">tag7</a>
+<a class="tags2" href="#">tag8</a>
+<a class="tags2" href="#">tag9</a>
+<a class="tags2" href="#">tag10</a>
+<a class="tags2" href="#">tag11</a>
+<a class="tags2" href="#">tag12</a>
+<br/>
+<br/>
+<hr/>
+<h5>Alternative colors and fixed tilt</h5>
+
+<a class="tags3" href="#">tag13</a>
+<a class="tags3" href="#">tag14</a>
+<a class="tags3" href="#">tag15</a>
+<a class="tags3" href="#">tag16</a>
+<a class="tags3" href="#">tag17</a>
+<a class="tags3" href="#">tag18</a>
+
 </body>
 </html>
